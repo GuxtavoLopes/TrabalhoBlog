@@ -28,6 +28,7 @@
         </script>
         
         
+        
     </head>
     <body>
 
@@ -102,10 +103,10 @@
                         <form id="FormFormulario" name="FormFormulario" method="post" action="php/btnEnviar.php">
                             
                             <b>Nome: </b> 
-                            <input type="text" name="nome" id="nome">
+                            <input type="text" name="nome" id="nome" maxlength="50">
                             
                             <b>Endereço: </b> 
-                            <input type="text" name="endereco" id="endereco">
+                            <input type="text" name="endereco" id="endereco" maxlength="50">
                             
                             
                             <br><br>
@@ -114,7 +115,7 @@
                             <input type="number" name="telefone" id="telefone">
                             
                             <b>E-Mail: </b> 
-                            <input type="email" name="email">
+                            <input type="email" name="email" maxlength="50">
                             
                             <br><br>
                             
@@ -148,8 +149,8 @@
                             <textarea name="descricao" id="descricao" ></textarea>
                             <br><br>                            
                             
-                            <input type="submit" value="Enviar" id="btnEnviar">	
-                            <input type="reset" value="Limpar" id="btnLimpar">
+                            <input type="submit" value="Enviar" name="btnEnviar">	
+                            <input type="reset" value="Limpar" name="btnLimpar">
                        
                         </form>
                         
@@ -164,3 +165,10 @@
 
     </body>
 </html>
+
+<?php
+    if(isset($_POST["botao"]))
+    {
+     echo $nome;
+    }
+?>
