@@ -1,0 +1,27 @@
+/* 
+    Created on : 23/09/2015, 10:22:51
+    Author     : Lopes
+*/
+
+#ColunaFormulario
+{
+    background-color: paleturquoise;
+}
+
+body
+{
+    background-color: darkgray;
+}
+
+input 
+{
+  display: inline-block;
+  padding-left: 10px;
+}
+
+#descricao
+{
+    width: 500px; 
+    height: 150px; 
+    resize: none;
+}

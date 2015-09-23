@@ -12,7 +12,22 @@
         <link rel="stylesheet" href="css/theme.min.css">
         <link rel="stylesheet" href="css/corporate.min.css">
         <link rel="stylesheet" href="css/extras.min.css">
-
+        <link rel="stylesheet" href="css/Formulario.css">
+        
+        
+        <!-- LINKANDO PARA O JAVASCRIPT-->        
+        <script type="text/javascript" src="http://cidades-estados-js.googlecode.com/files/cidades-estados-v0.2.js"></script>
+        <script type="text/javascript">
+            window.onload = function() {
+                new dgCidadesEstados(
+                    document.getElementById('estado'),
+                    document.getElementById('cidade'),
+                    true
+                );
+            }
+        </script>
+        
+        
     </head>
     <body>
 
@@ -60,7 +75,7 @@
 
                                 <li class="menu-item active ">
 
-                                    <a href="Contato.html">Contato</a> 
+                                    <a href="contato.html">Contato</a> 
 
                                 </li>
                             </ul>
@@ -76,29 +91,76 @@
 
         <!-- INICIO DO FORMULÁRIO -->
 
-        <div class="row">
-            <div class="col-sm-1" ></div>
-            <div class="col-sm-2" >.col-sm-4</div>
-            <div class="col-sm-2" >.col-sm-4</div>
-            <div class="col-sm-2" >.col-sm-4</div>
-            <div class="col-sm-2" >.col-sm-4</div>
-        </div>
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6" id="ColunaFormulario">
+                        
+                        <h2>Entre em Contato</h2>
+                        
+                        <br>
+                        
+                        <form id="FormFormulario" name="FormFormulario" method="post" action="php/btnEnviar.php">
+                            
+                            <b>Nome: </b> 
+                            <input type="text" name="nome" id="nome">
+                            
+                            <b>Endereço: </b> 
+                            <input type="text" name="endereco" id="endereco">
+                            
+                            
+                            <br><br>
+                            
+                            <b>Telefone: </b> 
+                            <input type="number" name="telefone" id="telefone">
+                            
+                            <b>E-Mail: </b> 
+                            <input type="email" name="email">
+                            
+                            <br><br>
+                            
+                            <b>Sexo:</b>
+                            <input type="radio" name="sexo" value="M">Masculino
+                            <input type="radio" name="sexo" value="F">Feminino
+                            
+                            <br><br>
+                            
+                            <form method="post">
+                            <label><b>Estado</label>:</b>
+                            <select id="estado" name="estado"></select>
+                            
+                            <label><b>Cidade</label>:</b>
+                            <select id="cidade" name="cidade"></select>
 
-        <div class="row">
-            <div class="col-sm-1" >.col-sm-4</div>
-            <div class="col-sm-2" >.col-sm-4</div>
-            <div class="col-sm-2" >.col-sm-4</div>
-            <div class="col-sm-2" >.col-sm-4</div>
-            <div class="col-sm-2" >.col-sm-4</div>
-        </div>
+                            <br><br>
 
 
+                            <b>Sobre:</b> <br>
+                            <input type="checkbox">Reclamações
+                            <input type="checkbox">Ajuda
+                            
+                            <br>
+                            
+                            <input type="checkbox">Curiosidade
+                            <input type="checkbox">Outros<br>
+                            <br>
 
+                            <b>Descrição:</b> <br>
+                            <textarea name="descricao" id="descricao" ></textarea>
+                            <br><br>                            
+                            
+                            <input type="submit" value="Enviar" id="btnEnviar">	
+                            <input type="reset" value="Limpar" id="btnLimpar">
+                       
+                        </form>
+                        
+                        
+                       
+                    
+                    
+                    </div>
+                </div>
 
-        <!-- FIM DO FORMULÁRIO -->
-
-
-
+            <!-- FIM DO FORMULÁRIO -->
 
     </body>
 </html>
