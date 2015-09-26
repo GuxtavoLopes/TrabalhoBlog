@@ -11,6 +11,11 @@
 body
 {
     background-color: darkgray;
+    background-attachment: fixed;
+    background-image: url("../img/backgroud.jpg");
+    background-repeat: no-repeat;
+    background-size: auto cover;
+    background-position: center center;
 }
 
 input 
