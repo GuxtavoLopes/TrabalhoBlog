@@ -31,6 +31,21 @@
             }
         </script>
         
+        <!--LINK DO CSS -->
+        <style>
+            body
+            {
+                background:url("img/backgroudBasquete.jpg") no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+        </style>
+        
+        
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
         
     </head>
     <body>
@@ -49,13 +64,13 @@
 
                                 <li class="menu-item ">
 
-                                    <a href="corporate-index.html">Início</a>
+                                    <a href="index.html">Início</a>
 
                                 </li>
                                 
                                 <li class="menu-item ">
 
-                                    <a href="artesMarciais.html">Artes Marciais</a>
+                                    <a href="artesMarciais.html">Kung Fu</a>
 
                                 </li>
                                 
@@ -100,20 +115,79 @@
                     <div class="col-md-3"></div>
                     <div class="col-md-6" id="ColunaFormulario">
                         
-                        <h2>Conteúdo</h2>
+                        <h1>Basquete</h1>
+                        
+                        <hr>
+                        
+                        <h2>Primeiro Jogo</h2>
+                        
+                        <p align="justify">
+                            
+                            O primeiro jogo de Basquetebol foi disputado em 20 de Janeiro de 1892, com nove jogadores em cada equipe e utilizando-se
+                            uma bola de futebol, sendo visto apenas por funcionários da ACM. Cerca de duzentas pessoas viram o jogo, que terminou 
+                            com o placar de 1 a 0, sendo a cesta feita de uma distância de 7,6 metros. Equipes de cinco pessoas passaram a ser o
+                            padrão por volta de 1897-1898.
+                            
+                            <br>
+                            
+                            O basquete feminino iniciou em 1892 quando a professora de educação física do Smith College, Senda Berenson, adaptou as
+                            regras criadas por James Naismith. A primeira partida aconteceu em 4 de Abril de 1896. A Universidade de Stanford venceu
+                            a Universidade da Califórnia.
+                            
+                        </p>
+                        
+                        <br>
+                        
+                        <h2>Objetivo do Jogo</h2>
+                        
+                        <p align="justify">
+                            
+                            O objetivo do jogo é introduzir a bola no cesto da equipe adversária (marcando pontos) e, simultaneamente, evitar que esta
+                            seja introduzida no próprio cesto, respeitando as regras do jogo. A equipe que obtiver mais pontos no fim do jogo vence.
+                            
+                            <br>
+                            
+                            A competição é dirigida por:
+                            
+                            <br>
+                            
+                            - Três árbitros – têm como função assegurarem o cumprimento das regras do jogo.
+                            <br>
+                            - Um marcador e o seu auxiliar – têm como funções o preenchimento do boletim de jogo, onde registram os pontos marcados, as faltas pessoais e técnicas, etc.
+                            <br>
+                            - O cronometrista – verifica o tempo de jogo e os descontos de tempo
+                            <br>
+                            - Um operador de vinte e quatro segundos – controla os 24 segundos que cada equipe dispõe para a execução de uma jogada.
+                            <br>
+                            
+                        </p>
+                        <br>
+                        
+                        
+                        <iframe width="800" height="600" src="https://www.youtube.com/embed/_O8fTYmqrqk" frameborder="0" allowfullscreen ></iframe>
                         
                         
                         
                         
-                        
-                        
-                       
+                        <br>
+                             <br>
+                             <input id="subir" type="button" value="Voltar ao topo ↑">
                     
-                    
+                              <br><br>
+                             
                     </div>
                 </div>
 
             <!-- FIM DO FORMULÁRIO -->
+            
+            <script type="text/javascript">
+            $(document).ready(function() {
+               $('#subir').click(function(){
+                  $('html, body').animate({scrollTop:0}, 'slow');
+              return false;
+                 });
+             });
+            </script>
 
     </body>
 </html>

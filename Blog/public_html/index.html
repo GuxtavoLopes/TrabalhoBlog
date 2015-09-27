@@ -32,6 +32,8 @@
         </script>
         
         
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        
     </head>
     <body>
 
@@ -55,7 +57,7 @@
                                 
                                 <li class="menu-item ">
 
-                                    <a class="dropdown-toggle" data-toggle="dropdown" href="artesMarciais.html">Artes Marciais</a>
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="artesMarciais.html">Kung Fu</a>
 
                                 </li>
                                 
@@ -110,43 +112,43 @@
                                 <img src="img/kung_fu_2.jpg" alt="Kung Fu" title="Kung Fu - Artes Marciais"/>
                             </a>
                             
-                            <br><br><br><br><br><br>
-                            <br><br><br><br><br><br>
-                            <br><br><br>
+                            <br><br><br><br>
                             
                             <a href="volei.html">
                                 <img src="img/volei.jpg" alt="vôlei" title="Vôlei"/>
                             </a>
                             
                             <br><br><br><br><br><br>
-                            <br><br><br><br><br>
                             
                             <a href="basquete.html">
                                 <img src="img/basquete.jpg" alt="basquete" title="Basquete"/>
                             </a>
                             
+                             <br><br><br><br><br><br><br><br>
+                            
                             <a href="futebol.html">
                                 <img src="img/futebol.jpg" alt="futebol" title="Futebol"/>
                             </a>
                             
+                             <br>
+                             <br>
+                             <br><br>
+                             <input id="subir" type="button" value="Voltar ao topo ↑">
                         </div>
                         
                         <div class="col-md-8" id="colunaImg"> 
                             
-                            <h3>Artes Marciais</h3>
+                            <h3>Kung Fu</h3>
                             
                             <p align="justify">
                                 
-                                Artes marciais são disciplinas físicas e mentais codificadas em diferentes graus, 
-                                que tem como objetivo um alto desenvolvimento de seus praticantes para que possam 
-                                defender-se ou submeter o adversário mediante diversas técnicas. São sistemas para 
-                                treinamento de combate, geralmente sem o uso de armas de fogo ou de outros 
-                                dispositivos modernos. Actualmente, as artes marciais, para além de praticadas enquanto
-                                treinamento militar, policial e de defesa pessoal, são também praticadas como Desporto de combate.
-                                Existem diversos estilos, sistemas e escolas de artes marciais. O que diferencia as 
-                                artes marciais da mera violência física (briga de rua) é a organização de suas técnicas
-                                num sistema coerente de combate e desenvolvimento físico, mental e espiritual assim como a
-                                prática de exercícios físicos.
+                                Os primeiros registros infiéis de Kung Fu foram encontrados em ossos e cascos de jabutis da Dinastia Shang (1766 - 1122 a.C.),
+                                embora acredita-se que o Kung Fu se desenvolveu muito antes disso. Machados de pedra, facas e flechas foram desenterrados do 
+                                período da China em recentes escavações. Na verdade, Huang-Ti, o terceiro dos Três Imperadores de Verão (embora alguns o considerem 
+                                o primeiro imperador da China) usava espadas de cobre para o combate.
+                                
+                                <br>
+                                
                                 
                             </p>
                             
@@ -203,19 +205,23 @@
                                 
                             </p>
                             
-                        </div>
-                        
-                                                
-                        
-                        
-                       
-                    
-                    
+                        </div>                    
                     </div>
                 </div>
 
             <!-- FIM DO FORMULÁRIO -->
             <br>
+            
+           
+            
+            <script type="text/javascript">
+            $(document).ready(function() {
+               $('#subir').click(function(){
+                  $('html, body').animate({scrollTop:0}, 'slow');
+              return false;
+                 });
+             });
+            </script>
 
     </body>
 </html>
